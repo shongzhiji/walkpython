@@ -9,9 +9,8 @@ import requests
 import configparser
 import os
 
-# 配置文件
-config = configparser.ConfigParser()
-config.read(os.path.join(os.getcwd(), "config.ini"), encoding='utf-8')
+
+
 
 
 # 获取登录code
@@ -90,8 +89,9 @@ def login(user, password):
 
 # 主函数
 def run(_user, _passwd, min_1, max_1):
-    user = str(_user)
-    password = str(_passwd)
+    if 'users' in os.environ:
+        for user_password in os.environ['users'].split(';'):
+            user, password = user_password.split(',')
     step = str(random.randint(8000, 13000))
     if user == '' or password == '':
         print("用户名或密码填写有误！")
