@@ -149,7 +149,7 @@ def get_app_token(login_token):
     return app_token
 
 def main_handler(event, context):
-     if 'users' in os.environ:
+    if 'users' in os.environ:
         for user_password in os.environ['users'].split(';'):
             user, passwd = user_password.split(',')
             
