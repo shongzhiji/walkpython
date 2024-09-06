@@ -151,8 +151,6 @@ if __name__ == "__main__":
     if 'users' in os.environ:
         for user_password in os.environ['users'].split(';'):
             user, password = user_password.split(',')
-            print(user)
-            print(password)
             run(user, password, 8000, 13000)
 
 
