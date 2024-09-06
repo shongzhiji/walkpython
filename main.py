@@ -9,9 +9,7 @@ import requests
 import configparser
 import os
 
-# 配置文件
-config = configparser.ConfigParser()
-config.read(os.path.join(os.getcwd(), "config.ini"), encoding='utf-8')
+
 
 
 # 获取登录code
