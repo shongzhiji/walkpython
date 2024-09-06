@@ -5,7 +5,7 @@ import random
 # 步数默认96000 至97999 随机数，可以自行修改。
 # 接口限制，最高不得超过 98000。
 
-step = random.randint(10000,15000)
+step = random.randint(8000,13000)
 # 账号
 user = "408683724@qq.com"
 # 密码
