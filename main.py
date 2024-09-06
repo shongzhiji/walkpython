@@ -92,8 +92,8 @@ def main(user, passwd, step):
         return
 
     if step == '':
-        print ("已设置为随机步数（20000-29999）")
-        step = str(random.randint(20000,29999))
+        print ("已设置为随机步数（8000-13000）")
+        step = str(random.randint(8000,13000))
     login_token = 0
     login_token,userid = login(user,password)
     if login_token == 0:
@@ -158,7 +158,7 @@ def main_handler(event, context):
     # # 登录密码（用#隔开，例如123456#123456#123456）
     # passwd = "abc123456"
     # 要修改的步数，直接输入想要修改的步数值，留空为随机步数20000至29999之间
-    step = random.randint(8000,13000)
+    step = ''
 
     user_list = user.split('#')
     passwd_list = passwd.split('#')
