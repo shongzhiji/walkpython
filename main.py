@@ -149,10 +149,14 @@ def get_app_token(login_token):
     return app_token
 
 def main_handler(event, context):
-    # 用户名（单用户的格式为 13800138000 ，多用户用#隔开，例如13800138000#13800138000#13800138000）
-    user = "408683724@qq.com"
-    # 登录密码（用#隔开，例如123456#123456#123456）
-    passwd = "abc123456"
+     if 'users' in os.environ:
+        for user_password in os.environ['users'].split(';'):
+            user, passwd = user_password.split(',')
+            
+    # # 用户名（单用户的格式为 13800138000 ，多用户用#隔开，例如13800138000#13800138000#13800138000）
+    # user = "408683724@qq.com"
+    # # 登录密码（用#隔开，例如123456#123456#123456）
+    # passwd = "abc123456"
     # 要修改的步数，直接输入想要修改的步数值，留空为随机步数20000至29999之间
     step = random.randint(8000,13000)
 
