@@ -63,7 +63,7 @@ def login(user, password):
         data2 = {
             "allow_registration=": "false",
             "app_name": "com.xiaomi.hm.health",
-            "app_version": "6.12.0",
+            "app_version": "6.5.0",
             "code": f"{code}",
             "country_code": "CN",
             "device_id": "2C8B8939-0CCB-4E95-8CBA-CB8EA6E624A1",
@@ -71,7 +71,7 @@ def login(user, password):
             "dn": "api-user.huami.com%2Capi-mifit.huami.com%2Capp-analytics.huami.com",
             "grant_type": "access_token",
             "lang": "zh_CN",
-            "os_version": "2.11.00",
+            "os_version": "1.5.0",
             "source": "com.xiaomi.hm.health",
             "third_name": "email",
         }
