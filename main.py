@@ -66,7 +66,7 @@ def login(user, password):
             "app_version": "6.12.0",
             "code": f"{code}",
             "country_code": "CN",
-            "device_id": "2C8B4939-0CCB-4E94-8CBA-CB8EA6E614A1",
+            "device_id": "2C8B8939-0CCB-4E95-8CBA-CB8EA6E624A1",
             "device_model": "phone",
             "dn": "api-user.huami.com%2Capi-mifit.huami.com%2Capp-analytics.huami.com",
             "grant_type": "access_token",
