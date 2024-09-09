@@ -71,7 +71,7 @@ def login(user, password):
             "dn": "api-user.huami.com%2Capi-mifit.huami.com%2Capp-analytics.huami.com",
             "grant_type": "access_token",
             "lang": "zh_CN",
-            "os_version": "1.5.0",
+            "os_version": "2.11.00",
             "source": "com.xiaomi.hm.health",
             "third_name": "email",
         }
